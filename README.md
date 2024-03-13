@@ -1,5 +1,6 @@
 # Spotty-Fox
 Spotify To YouTube Firefox Extension
+![icon](https://github.com/davidinfosec/Spotty-Fox/assets/87215831/3e6ec7b3-c163-426f-b7dd-618a6ff0350b)
 
 Using the YouTube and Spotify APIs, quickly convert Spotify Links to YouTube Links. Share music with your friends quickly.
 ![ShareX_jsdqmx2xbt](https://github.com/davidinfosec/Spotty-Fox/assets/87215831/6f97a53c-23fd-4221-adc7-5d47a6d4f46f)

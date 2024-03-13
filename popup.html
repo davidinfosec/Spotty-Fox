@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotty Fox - Spotify Links to YouTube</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #ECFDF5; /* A very light lime green background */
+            color: #064E3B; /* Dark green text for better contrast */
+        }
+        #header h2, #api-keys label {
+            margin: 0;
+            padding-bottom: 10px;
+            color: #10B981; /* A lime green color */
+            text-align: center;
+        }
+        #links {
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    margin: 0 auto; /* Centers the div in the case of a specified width */
+    padding: 20px 0; /* Adjust padding as needed for vertical spacing */
+}
+
+
+        #links a, .toggle-visibility {
+            color: #10B981; /* Same lime green color for links */
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #links a:hover, .toggle-visibility:hover {
+            text-decoration: underline;
+        }
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 0px); /* Adjust for padding */
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #A7F3D0; /* Lighter lime green border */
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #10B981; /* Lime green background for buttons */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #059669; /* Darker lime green on hover */
+        }
+        #result, #helpInfo {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #D1FAE5; /* Very light lime green border */
+            border-radius: 5px;
+        }
+        .api-key-container {
+            position: relative;
+        }
+        .toggle-visibility {
+            position: absolute;
+            right: 10px;
+            top: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2>Spotty Fox - Spotify to YouTube</h2>
+        <div id="links">
+            <a href="https://davidinfosec.com" target="_blank">Blog</a>
+            <a href="https://davidinfosec.com/donate" target="_blank">Donate</a>
+            <a href="https://github.com/davidinfosec/Spotty-Fox" target="_blank">Source Code</a>
+        </div>
+    </div>
+    <input type="text" id="spotifyLink" placeholder="Enter Spotify link">
+    <button id="convert">Get YouTube Link</button>
+    <div id="api-keys">
+        <label for="clientId">Spotify Client ID</label>
+        <div class="api-key-container">
+            <input type="password" id="clientId" placeholder="Spotify Client ID">
+            <span class="toggle-visibility" data-target="clientId">Show</span>
+        </div>
+        <label for="clientSecret">Spotify Client Secret</label>
+        <div class="api-key-container">
+            <input type="password" id="clientSecret" placeholder="Spotify Client Secret">
+            <span class="toggle-visibility" data-target="clientSecret">Show</span>
+        </div>
+        <label for="youtubeApiKey">YouTube API Key</label>
+        <div class="api-key-container">
+            <input type="password" id="youtubeApiKey" placeholder="YouTube API Key">
+            <span class="toggle-visibility" data-target="youtubeApiKey">Show</span>
+        </div>
+    </div>
+    <div id="result"></div>
+    <div id="helpInfo" style="display: none;"></div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

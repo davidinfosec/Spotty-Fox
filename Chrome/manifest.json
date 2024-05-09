@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Spotty Fox",
+  "version": "1.0",
+  "description": "Convert Spotify links to their YouTube equivalents.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}

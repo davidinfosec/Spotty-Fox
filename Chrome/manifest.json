@@ -4,7 +4,6 @@
   "version": "1.0",
   "description": "Convert Spotify links to their YouTube equivalents.",
   "permissions": [
-    "activeTab",
     "storage"
   ],
   "action": {
